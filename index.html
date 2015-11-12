@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>LocalText - Books made easier</title>
+        <meta name="description" content="Selling/buying books">
+        <link rel="stylesheet" href="./bootstrap-3.3.5/dist/css/bootstrap.min.css" charset="utf-8">
+       <link rel="stylesheet" href="./assets/css/index.css" charset="utf-8">
+        
+        <!--testing purposes-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        <h1>LocalText</h1>
+        <h3>Buying and Selling textbooks has never been easier.</h3>
+        <div id="buttons">
+            <!-- Trigger the collapse with a button -->
+            <button type="button" class="btn" data-toggle="collapse" data-target="#Buy">Buy</button>
+
+            <!-- Trigger the modal with a button -->
+            <button id="SellingButton" type="button" class="btn" data-toggle="modal" data-target="#Sell">Sell</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="Sell" role="dialog">
+              <div class="modal-dialog">
+    
+              <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login</h4>
+              </div>
+              <div class="modal-body">
+                <div id="textfields">
+                  <form>
+                    <p>Email:</p>
+                    <input type="text" name="email">
+                    <p>Password:</p>
+                    <input type="password" name="password">
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- the collapse content -->
+        <div id="Buy" class="collapse">
+          <form>
+            <p>Book Name:<input type="text" name="bookName"></p>
+            <p>Author:<input type="text" name="Author"></p>
+            <p>IBSN:<input type="text" name="IBSN"></p>
+            <p>Date:<input type="text" name="DatePublished"></p>
+          </form>
+          <button id="search" type="submit" class="btn">Search</button>
+        </div>
+      </div>
+    </body>
+</html>
